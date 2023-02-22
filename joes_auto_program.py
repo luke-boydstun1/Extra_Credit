@@ -18,7 +18,7 @@ lcharge = 765.00
 # CREATE INSTANCES
 customer = j.Customer(name, address, phone)
 car = j.Car(make, model, year)
-
+service_quote = j.ServiceQuote(pcharge, lcharge)
 
 # PRINT
 print(

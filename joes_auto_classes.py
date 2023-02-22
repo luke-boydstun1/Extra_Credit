@@ -1,5 +1,4 @@
 class Customer:
-
     def __init__(self, name, address, phone):
         self.__name = name
         self.__address = address
@@ -23,8 +22,8 @@ class Customer:
     def get_phone(self):
         return self.__phone
 
-class Car:
 
+class Car:
     def __init__(self, make, model, year):
         self.__make = make
         self.__model = model
@@ -48,8 +47,8 @@ class Car:
     def get_year(self):
         return self.__year
 
-class ServiceQuote:
 
+class ServiceQuote:
     def __init__(self, pcharge, lcharge):
         self.__parts_charges = pcharge
         self.__labor_charges = lcharge
@@ -57,7 +56,7 @@ class ServiceQuote:
     def set_parts_charges(self, pcharge):
         self.__parts_charges = pcharge
 
-    def set_labor_charges(self,lcharge):
+    def set_labor_charges(self, lcharge):
         self.__labor_charges = lcharge
 
     def get_labor_charges(self):
@@ -67,7 +66,7 @@ class ServiceQuote:
         return self.__parts_charges
 
     def get_sales_tax(self):
-        return ((self.__labor_charges + self.__parts_charges)* 0.825)
-    
+        return (self.__labor_charges + self.__parts_charges) * 0.825
+
     def get_total_charges(self):
         return self.__labor_charges + self.__parts_charges + self.get_sales_tax()
